@@ -68,12 +68,13 @@ class Joke(object):
             self.put_data(data)
             
             # 5.stick up for page
+            print "第" + str(self.start_page) + "页下载完毕"
             self.start_page += 1
             
             # 6.防止服务器压力过大
             time.sleep(3)
 
-        print "任务完成"
+        print "任务全部完成:共" + str(self.start_page) + "页"
 
 
 if __name__ == "__main__":
