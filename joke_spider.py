@@ -71,7 +71,7 @@ class Joke(object):
             self.start_page += 1
             
             # 6.防止服务器压力过大
-            time.sleep(1)
+            time.sleep(3)
 
         print "任务完成"
 
